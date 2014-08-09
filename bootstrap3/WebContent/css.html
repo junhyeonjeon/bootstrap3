@@ -50,6 +50,23 @@ h1, h2, h3, h4, h5, h6, p, a, div, code {
 	box-shadow: inset 0 3px 6px rgba(0, 0, 0, .05);
 }
 </style>
+<style>
+.syntaxhighlighter.bootstrap {
+	padding: 9px 14px;
+	margin-bottom: 14px;
+	background: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	border-radius: 4px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, div, code {
+	font-family: 'Malgun Gothic';
+}
+
+.bs-example:after {
+	content: "예제";
+}
+</style>
 
 </head>
 <body>
@@ -69,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p, a, div, code {
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a href="/bootstrap3" class="navbar-brand">Home</a>
+				<a href="/bootstrap3/css.html" class="navbar-brand">Home</a>
 			</div>
 
 			<nav class="collapse navbar-collapse bs-navbar-collapse"
@@ -102,7 +119,7 @@ h1, h2, h3, h4, h5, h6, p, a, div, code {
 			<div class="col-md-3">
 				<div class="bs-sidebar hidden-print" role="complementary">
 					<ul class="nav bs-sidenav">
-						<li><a href="#sub_menu1">개요</a>
+						<li><a href="#side_menu1">개요</a>
 							<ul>
 								<!-- 위의 ul은 <ul class="nav"> 으로 해주면 된다. jQuery 필요시 -->
 								<li><a href="#menu1_sub1">HTML5 doctype</a></li>
@@ -112,7 +129,7 @@ h1, h2, h3, h4, h5, h6, p, a, div, code {
 								<li><a href="#menu1_sub5">CSS 초기화</a></li>
 								<li><a href="#menu1_sub6">.container</a></li>
 							</ul></li>
-						<li><a href="#sub_menu2">그리드 시스템</a>
+						<li><a href="#side_menu2">그리드 시스템</a>
 							<ul>
 								<!-- 위의 ul은 <ul class="nav"> 으로 해주면 된다. jQuery 필요시 -->
 								<li><a href="#menu2_sub1">미디어 쿼리</a></li>
@@ -126,6 +143,67 @@ h1, h2, h3, h4, h5, h6, p, a, div, code {
 								<li><a href="#menu2_sub9">컬럼 순서정하기</a></li>
 								<li><a href="#menu2_sub10">LESS 믹스인과 변수들</a></li>
 							</ul></li>
+						<li><a href="#side_menu3">타이포그래피</a>
+							<ul>
+								<!-- 위의 ul은 <ul class="nav"> 으로 해주면 된다. jQuery 필요시 -->
+								<li><a href="#menu3_sub1">제목</a></li>
+								<li><a href="#menu3_sub2">본문</a></li>
+								<li><a href="#menu3_sub3">강조</a></li>
+								<li><a href="#menu3_sub4">약어</a></li>
+								<li><a href="#menu3_sub5">주소</a></li>
+								<li><a href="#menu3_sub6">인용구</a></li>
+								<li><a href="#menu3_sub7">목록</a></li>
+							</ul></li>
+						<li><a href="#side_menu4">코드</a></li>
+						<li><a href="#side_menu5">테이블</a>
+							<ul>
+								<!-- 위의 ul은 <ul class="nav"> 으로 해주면 된다. jQuery 필요시 -->
+								<li><a href="#menu5_sub1">기본 예제</a></li>
+								<li><a href="#menu5_sub2">줄무늬 행</a></li>
+								<li><a href="#menu5_sub3">선있는 테이블</a></li>
+								<li><a href="#menu5_sub4">행 hover</a></li>
+								<li><a href="#menu5_sub5">좁은폭 테이블</a></li>
+								<li><a href="#menu5_sub6">맥락적인 클래스들</a></li>
+								<li><a href="#menu5_sub7">반응형 테이블</a></li>
+							</ul></li>
+						<li><a href="#side_menu6">폼</a>
+							<ul>
+								<!-- 위의 ul은 <ul class="nav"> 으로 해주면 된다. jQuery 필요시 -->
+								<li><a href="#menu6_sub1">기본 예제</a></li>
+								<li><a href="#menu6_sub2">인라인 폼</a></li>
+								<li><a href="#menu6_sub3">수평 폼</a></li>
+								<li><a href="#menu6_sub4">지원하는 콘트롤</a></li>
+								<li><a href="#menu6_sub5">정적 콘트롤</a></li>
+								<li><a href="#menu6_sub6">폼콘트롤 상태</a></li>
+								<li><a href="#menu6_sub7">폼콘트롤 크기조절</a></li>
+								<li><a href="#menu6_sub8">도움말</a></li>
+							</ul></li>
+						<li><a href="#side_menu7">버튼</a>
+							<ul>
+								<!-- 위의 ul은 <ul class="nav"> 으로 해주면 된다. jQuery 필요시 -->
+								<li><a href="#menu7_sub1">옵션</a></li>
+								<li><a href="#menu7_sub2">크기</a></li>
+								<li><a href="#menu7_sub3">비활성화 상태</a></li>
+								<li><a href="#menu7_sub4">버튼 태그</a></li>
+							</ul></li>
+						<li><a href="#side_menu8">이미지</a></li>
+						<li><a href="#side_menu9">헬퍼 클래스</a>
+							<ul>
+								<!-- 위의 ul은 <ul class="nav"> 으로 해주면 된다. jQuery 필요시 -->
+								<li><a href="#menu9_sub1">닫기 아이콘</a></li>
+								<li><a href="#menu9_sub2">간편한 float</a></li>
+								<li><a href="#menu9_sub3">.clearfix</a></li>
+								<li><a href="#menu9_sub4">콘텐츠 보이기 그리고 숨기기</a></li>
+								<li><a href="#menu9_sub5">스크린리더 콘텐츠</a></li>
+								<li><a href="#menu9_sub6">이미지 대체</a></li>
+							</ul></li>
+						<li><a href="#side_menu10">반응형 유틸리티</a>
+							<ul>
+								<!-- 위의 ul은 <ul class="nav"> 으로 해주면 된다. jQuery 필요시 -->
+								<li><a href="#menu10_sub1">반응형 유틸리티</a></li>
+								<li><a href="#menu10_sub2">프린트 클래스</a></li>
+								<li><a href="#menu10_sub3">테스트 케이스</a></li>
+							</ul></li>
 					</ul>
 				</div>
 			</div>
@@ -133,13 +211,13 @@ h1, h2, h3, h4, h5, h6, p, a, div, code {
 			================== 메인화면 ====================
 			============================================-->
 			<div class="col-md-9" role="main">
-				<div class="bs-docs-section">
 
-					<!-- =========================================
-					==============================================
-					============================================-->
+				<!-- =========================================
+				==============================================
+				============================================-->
+				<div class="bs-docs-section">
 					<div class="page-header">
-						<h1 id="sub_menu1">개요</h1>
+						<h1 id="side_menu1">개요</h1>
 					</div>
 					<p class="lead">웹개발을 더 좋고, 빠르고, 강력하게 접근하는 방법을 가진 부트스트랩의 기반시설의
 						핵심적인 부분을 알아보세요.</p>
@@ -256,12 +334,14 @@ h1, h2, h3, h4, h5, h6, p, a, div, code {
 							&ensp;...<br> &lt;/<b style="color: blue;">div</b>&gt;<br>
 						</p>
 					</div>
+				</div>
 
-					<!-- =========================================
-					==============================================
-					============================================-->
+				<!-- =========================================
+				==============================================
+				============================================-->
+				<div class="bs-docs-section">
 					<div class="page-header">
-						<h1 id="sub_menu2">그리그 시스템</h1>
+						<h1 id="side_menu2">그리그 시스템</h1>
 					</div>
 					<p class="lead">
 						부트스트랩은 기기나 뷰포트 크기가 증가함에 따라 12 열이 적절하게 확대되는 반응형, 모바일 우선 유동 그리드 시스템
@@ -465,10 +545,1743 @@ h1, h2, h3, h4, h5, h6, p, a, div, code {
 								style="color: blue;">div</b>&gt;<br>
 						</p>
 					</div>
-					
-					
+
+					<h3 id="menu2_sub4">예제: 모바일과 데스크탑</h3>
+					<p>
+						보다 작은 기기들에서 당신의 컬럼들이 간단하게 쌓이는 것을 원하세요? 당신의 컬럼에
+						<code>.col-xs-*</code>
+						<code>.col-md-*</code>
+						를 추가하여 매우 작은 기기와 중간 기기 그리드 클래스들을 사용하세요. 그것이 어떻게 작동되는지 아래의 예제를 보세요.
+					</p>
+					<div class="bs-docs-grid">
+						<div class="row show-grid">
+							<div class="col-xs-12 col-md-8">.col-xs-12 col-md-8</div>
+							<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+						</div>
+						<div class="row show-grid">
+							<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+							<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+							<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+						</div>
+						<div class="row show-grid">
+							<div class="col-xs-6">.col-xs-6</div>
+							<div class="col-xs-6">.col-xs-6</div>
+						</div>
+					</div>
+					<div class="bs-old-docs">
+						<p>
+							&lt;!-- 모바일에서 컬럼들이 하나는 꽉찬너비로, 다른 하나는 절반너비로 쌓이게 합니다. --&gt;<br>
+							&lt;div class="row"&gt;<br> &lt;div class="col-xs-12
+							col-md-8"&gt;.col-xs-12 col-md-8&lt;/div&gt;<br> &lt;div
+							class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;<br>
+							&lt;/div&gt;<br> <br> &lt;!-- 컬럼들은 모바일에서 50% 너비로 시작하고
+							데스크탑에서는 33.3% 너비가 됩니다. --&gt;<br> &lt;div class="row"&gt;<br>
+							&lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6
+							.col-md-4&lt;/div&gt;<br> &lt;div class="col-xs-6
+							col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;<br> &lt;div
+							class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;<br>
+							&lt;/div&gt;<br> <br> &lt;!-- 컬럼들은 모바일과 데스크탑에서 항상 50%
+							너비가 됩니다. --&gt;<br> &lt;div class="row"&gt;<br> &lt;div
+							class="col-xs-6"&gt;.col-xs-6&lt;/div&gt;<br> &lt;div
+							class="col-xs-6"&gt;.col-xs-6&lt;/div&gt;<br> &lt;/div&gt;
+						</p>
+					</div>
+
+					<h3 id="menu2_sub5">예제: 모바일, 테블릿, 데스크탑</h3>
+					<p>
+						이전 예제를 태블릿
+						<code>.col-sm-*</code>
+						클래스들과 함께 좀더 역동적이고 힘찬 레이아웃들로 만들어보자.
+					</p>
+					<div class="bs-docs-grid">
+						<div class="row show-grid">
+							<div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12
+								.col-sm-6 .col-md-8</div>
+							<div class="col-xs-6 col-sm-6 col-md-4">.col-xs-6 .col-sm-6
+								.col-md-4</div>
+						</div>
+						<div class="row show-grid">
+							<div class="col-xs-6 col-sm-4 col-md-4">.col-xs-6 .col-sm-4
+								.col-md-4</div>
+							<div class="col-xs-6 col-sm-4 col-md-4">.col-xs-6 .col-sm-4
+								.col-md-4</div>
+							<!-- Optional: clear the XS cols if their content doesn't match in height -->
+							<div class="clearfix visible-xs"></div>
+							<div class="col-xs-6 col-sm-4 col-md-4">.col-xs-6 .col-sm-4
+								.col-md-4</div>
+						</div>
+					</div>
+					<div class="bs-old-docs">
+						<p>
+							&lt;div class="row"&gt;<br> &emsp;&lt;div class="col-xs-12
+							col-sm-6 col-md-8"&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;/div&gt;<br>
+							&emsp;&lt;div class="col-xs-6 col-sm-6 col-md-4"&gt;.col-xs-6
+							.col-sm-6 .col-md-4&lt;/div&gt;<br> &lt;/div&gt;<br>
+							&lt;div class="row"&gt;<br> &emsp;&lt;div class="col-xs-6
+							col-sm-4 col-md-4"&gt;.col-xs-6 .col-sm-4 .col-md-4&lt;/div&gt;<br>
+							&emsp;&lt;div class="col-xs-6 col-sm-4 col-md-4"&gt;.col-xs-6
+							.col-sm-4 .col-md-4&lt;/div&gt;<br> &emsp;&lt;!-- 부가적으로: 높이가
+							맞지 않는다면, XS 컬럼을 클리어합니다. --&gt;<br> &emsp;&emsp;&lt;div
+							class="clearfix visible-xs"&gt;&lt;/div&gt;<br>
+							&emsp;&lt;div class="col-xs-6 col-sm-4 col-md-4"&gt;.col-xs-6
+							.col-sm-4 .col-md-4&lt;/div&gt;<br> &lt;/div&gt;
+						</p>
+					</div>
+
+					<h3 id="menu2_sub6">반응형 컬럼 초기화</h3>
+					<p>
+						사용가능한 4등급의 그리드들과 특정 분기점에서, 컬럼들이 하나가 다른 컬럼보다 긴 경우 명확하게 클리어 되지 않을 수
+						있다. 그걸 고치기 위해서는,
+						<code>.clearfix</code>
+						와 우리의 <a href="sub_menu10">반응형 유틸리티 클래스들</a>의 조합을 사용하면 됩니다.
+					</p>
+					<div class="bs-old-docs">
+						<p>
+							&lt;div class="row"&gt;<br> &emsp;&lt;div class="col-xs-6
+							col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;<br>
+							&emsp;&lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6
+							.col-sm-3&lt;/div&gt;<br> <br> &lt;!-- 필요한 뷰포트에만
+							clearfix 를 추가하세요. --&gt;<br> &lt;div class="clearfix
+							visible-xs"&gt;&lt;/div&gt;<br> <br> &emsp;&lt;div
+							class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;<br>
+							&emsp;&lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6
+							.col-sm-3&lt;/div&gt;<br> &lt;/div&gt;
+						</p>
+					</div>
+					<p>
+						반응형 분기점에서 컬럼을 클리어하는 것과 더불어, 당신은 <b>오프셋을 초기화</b> 할 필요가 있습니다. 오프셋은
+						(두번째로) 작은 그리드 등급에서부터 사용 가능하므로, 이러한 초기화는 중간이나 큰 그리드 등급에서만 사용할 수
+						있습니다.
+					</p>
+					<div class="bs-old-docs">
+						<p>
+							&lt;div class="row"&gt;<br> &lt;div class="col-sm-5
+							col-md-6"&gt;.col-sm-5 .col-md-6&lt;/div&gt;<br> &lt;div
+							class="col-sm-5 col-sm-offset-2 col-md-6
+							col-md-offset-0"&gt;.col-sm-5 .col-sm-offset-2 .col-md-6
+							.col-md-offset-0&lt;/div&gt;<br> &lt;/div&gt;<br> <br>
+							&lt;div class="row"&gt;<br> &lt;div class="col-sm-6 col-md-5
+							col-lg-6"&gt;.col-sm-6 .col-md-5 .col-lg-6&lt;/div&gt;<br>
+							&lt;div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6
+							col-lg-offset-0"&gt;.col-sm-6 .col-md-5 .col-md-offset-2
+							.col-lg-6 .col-lg-offset-0&lt;/div&gt;<br> &lt;/div&gt;
+						</p>
+					</div>
+
+					<h3 id="menu2_sub7">컬럼 오프셋하기</h3>
+					<p>
+						<code>.col-md-offset-*</code>
+						클래스를 사용하여 컬럼을 우측으로 옮기세요. 이 클래스들은
+						<code>*</code>
+						컬럼만큼 한 컬럼의 좌측 마진을 증가하게 합니다. 예를들어,
+						<code>.col-md-offset-4</code>
+						는
+						<code>.col-md-4</code>
+						을 4컬럼만큼 이동시킵니다.
+					</p>
+					<div class="bs-docs-grid">
+						<div class="row show-grid">
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-4 col-md-offset-4">.col-md-4
+								.col-md-offset-4</div>
+						</div>
+						<div class="row show-grid">
+							<div class="col-md-3 col-md-offset-3">.col-md-3
+								.col-md-offset-3</div>
+							<div class="col-md-3 col-md-offset-3">.col-md-3
+								.col-md-offset-3</div>
+						</div>
+						<div class="row show-grid">
+							<div class="col-md-6 col-md-offset-3">.col-md-6
+								.col-md-offset-3</div>
+						</div>
+					</div>
+					<div class="bs-old-docs">
+						&lt;div class="row"&gt;<br> &emsp;&lt;div
+						class="col-md-4"&gt;.col-md-4&lt;/div&gt;<br> &emsp;&lt;div
+						class="col-md-4 col-md-offset-4"&gt;.col-md-4
+						.col-md-offset-4&lt;/div&gt;<br> &lt;/div&gt;<br>
+						&lt;div class="row"&gt;<br> &emsp;&lt;div class="col-md-3
+						col-md-offset-3"&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;<br>
+						&emsp;&lt;div class="col-md-3 col-md-offset-3"&gt;.col-md-3
+						.col-md-offset-3&lt;/div&gt;<br> &lt;/div&gt;<br>
+						&lt;div class="row"&gt;<br> &emsp;&lt;div class="col-md-6
+						col-md-offset-3"&gt;.col-md-6 .col-md-offset-3&lt;/div&gt;<br>
+						&lt;/div&gt;
+					</div>
+
+					<h3 id="menu2_sub8">컬럼 중첩하기</h3>
+					<p>
+						기본그리드로 당신의 콘텐츠를 중첩하려면, 존재하는
+						<code>.col-md-*</code>
+						컬럼 내에 새로운
+						<code>.row</code>
+						와
+						<code>.col-md-*</code>
+						컬럼 세트를 추가하세요. 중첩된 행은 합쳐서 12 가 되는 하나의 컬럼 세트를 포함해야 합니다.
+					</p>
+					<div class="row show-grid">
+						<div class="col-md-9">
+							Level 1: .col-md-9
+							<div class="row show-grid">
+								<div class="col-md-6">Level 2: .col-md-6</div>
+								<div class="col-md-6">Level 2: .col-md-6</div>
+							</div>
+						</div>
+					</div>
+					<div class="bs-old-docs">
+						<p>
+							&lt;div class="row"&gt;<br> &emsp;&lt;div
+							class="col-md-9"&gt;<br> &emsp;&emsp;Level 1: .col-md-9<br>
+							&emsp;&emsp;&lt;div class="row"&gt;<br>
+							&emsp;&emsp;&emsp;&lt;div class="col-md-6"&gt;<br>
+							&emsp;&emsp;&emsp;Level 2: .col-md-6<br>
+							&emsp;&emsp;&emsp;&lt;/div&gt;<br> &emsp;&emsp;&emsp;&lt;div
+							class="col-md-6"&gt;<br> &emsp;&emsp;&emsp;Level 2:
+							.col-md-6<br> &emsp;&emsp;&emsp;&lt;/div&gt;<br>
+							&emsp;&emsp;&lt;/div&gt;<br> &emsp;&lt;/div&gt;<br>
+							&lt;/div&gt;
+						</p>
+					</div>
+
+					<h3 id="menu2_sub9">컬럼 순서정하기</h3>
+					<p>
+						<code>.col-md-push-*</code>
+						와
+						<code>.col-md-pull-*</code>
+						수식클래스들로 우리의 그리드 컬럼들의 순서를 쉽게 변경하세요.
+					</p>
+					<div class="row show-grid">
+						<div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+						<div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+					</div>
+					<div class="bs-old-docs">
+						<p>
+							&lt;div class="row"&gt;<br> &emsp;&lt;div class="col-md-9
+							col-md-push-3">.col-md-9 .col-md-push-3&lt;/div&gt;<br>
+							&emsp;&lt;div class="col-md-3 col-md-pull-9">.col-md-3
+							.col-md-pull-9&lt;/div&gt;<br> &lt;/div&gt;
+						</p>
+					</div>
+
+					<h3 id="menu2_sub10">LESS 믹스인과 변수들</h3>
+					<p>
+						빠른 레이아웃을 위한 <a href="#menu2_sub3">미리 만들어진 그리드 클래스들</a> 와 더불어,
+						부트스트랩은 당신만의 간단하고 시맨틱한 레이아웃을 빠르게 생성하기 위해 LESS 변수와 믹스인을 포함하고 있습니다.
+					</p>
+					<h4>변수들</h4>
+					<p>변수들은 컬럼들의 갯수, 간격의 너비, 미디어 쿼리 분기점을 결정합니다. 우리는 위처럼 미리 정의된 그리드
+						클래스들 뿐만 아니라 아래의 맞춤 믹스인을 위해 사용할 수 있습니다.</p>
+
+					<div class="bs-old-docs">
+						<p>
+							@grid-columns: 12;<br> @grid-gutter-width: 30px;<br>
+							@grid-float-breakpoint: 768px;
+						</p>
+					</div>
+					<h4>믹스인</h4>
+					<p>믹스인은 그리드 변수와 함께 개개의 그리드 컬럼들을 위한 시맨틱 CSS 를 생성하는데 사용됩니다.</p>
+					<div class="bs-old-docs">
+						<p>
+							// 일련의 컬럼을 위해 wrapper 를 생성합니다.<br> .make-row(@gutter:
+							@grid-gutter-width) {<br> // 그리고 나서 float 된 컬럼을 클리어 합니다<br>
+							.clearfix();<br> <br> @media (min-width: @screen-small)
+							{<br> margin-left: (@gutter / -2);<br> margin-right:
+							(@gutter / -2);<br> }<br> <br> // 컬럼들의 콘텐츠를 정렬하기
+							위해 중첩된 행들에 음수 마진을 줍니다<br> .row {<br> margin-left:
+							(@gutter / -2);<br> margin-right: (@gutter / -2);<br> }<br>
+							}<br> <br> // 추가적인 매우 작은 기기용 컬럼을 생성합니다<br>
+							.make-xs-column(@columns; @gutter: @grid-gutter-width) {<br>
+							position: relative;<br> // 컬럼이 비어있을때 없어지는걸 방지합니다<br>
+							min-height: 1px;<br> // 패딩으로 내부 간격<br> padding-left:
+							(@gutter / 2);<br> padding-right: (@gutter / 2);<br> <br>
+							// 가능한 컬럼수를 기반으로 너비를 계산합니다<br> @media (min-width:
+							@grid-float-breakpoint) {<br> float: left;<br> width:
+							percentage((@columns / @grid-columns));<br> }<br> }<br>
+							<br> // 작은 기기용 컬럼을 생성합니다<br> .make-sm-column(@columns;
+							@gutter: @grid-gutter-width) {<br> position: relative;<br>
+							// 컬럼이 비어있을때 없어지는걸 방지합니다<br> min-height: 1px;<br> //
+							패딩으로 내부 간격<br> padding-left: (@gutter / 2);<br>
+							padding-right: (@gutter / 2);<br> <br> // 가능한 컬럼수를 기반으로
+							너비를 계산합니다<br> @media (min-width: @screen-small) {<br>
+							float: left;<br> width: percentage((@columns /
+							@grid-columns));<br> }<br> }<br> <br> // 작은
+							기기용 컬럼 오프셋을 생성합니다<br> .make-sm-column-offset(@columns) {<br>
+							@media (min-width: @screen-small) {<br> margin-left:
+							percentage((@columns / @grid-columns));<br> }<br> }<br>
+							.make-sm-column-push(@columns) {<br> @media (min-width:
+							@screen-small) {<br> left: percentage((@columns /
+							@grid-columns));<br> }<br> }<br>
+							.make-sm-column-pull(@columns) {<br> @media (min-width:
+							@screen-small) {<br> right: percentage((@columns /
+							@grid-columns));<br> }<br> }<br> <br> // 중간
+							기기용 컬럼을 생성합니다<br> .make-md-column(@columns; @gutter:
+							@grid-gutter-width) {<br> position: relative;`<br> //
+							컬럼이 비어있을때 없어지는걸 방지합니다<br> min-height: 1px;<br> // 패딩으로
+							내부 간격<br> padding-left: (@gutter / 2);<br>
+							padding-right: (@gutter / 2);<br> <br> // 가능한 컬럼수를 기반으로
+							너비를 계산합니다<br> @media (min-width: @screen-medium) {<br>
+							float: left;<br> width: percentage((@columns /
+							@grid-columns));<br> }<br> }<br> <br> // 중간
+							기기용 컬럼 오프셋을 생성합니다<br> .make-md-column-offset(@columns) {<br>
+							@media (min-width: @screen-medium) {<br> margin-left:
+							percentage((@columns / @grid-columns));<br> }<br> }<br>
+							.make-md-column-push(@columns) {<br> @media (min-width:
+							@screen-medium) {<br> left: percentage((@columns /
+							@grid-columns));<br> }<br> }<br>
+							.make-md-column-pull(@columns) {<br> @media (min-width:
+							@screen-medium) {<br> right: percentage((@columns /
+							@grid-columns));<br> }<br> }<br> <br> // 큰
+							기기용 컬럼을 생성합니다<br> .make-lg-column(@columns; @gutter:
+							@grid-gutter-width) {<br> position: relative;<br> //
+							컬럼이 비어있을때 없어지는걸 방지합니다<br> min-height: 1px;<br> // 패딩으로
+							내부 간격<br> padding-left: (@gutter / 2);<br>
+							padding-right: (@gutter / 2);<br> <br> // 가능한 컬럼수를 기반으로
+							너비를 계산합니다<br> @media (min-width: @screen-large) {<br>
+							float: left;<br> width: percentage((@columns /
+							@grid-columns));<br> }<br> }<br> <br> // 큰
+							기기용 컬럼 오프셋을 생성합니다<br> .make-lg-column-offset(@columns) {<br>
+							@media (min-width: @screen-large) {<br> margin-left:
+							percentage((@columns / @grid-columns));<br> }<br> }<br>
+							.make-lg-column-push(@columns) {<br> @media (min-width:
+							@screen-large) {<br> left: percentage((@columns /
+							@grid-columns));<br> }<br> }<br>
+							.make-lg-column-pull(@columns) {<br> @media (min-width:
+							@screen-large) {<br> right: percentage((@columns /
+							@grid-columns));<br> }<br> }
+						</p>
+					</div>
+					<h4>사용법 예제</h4>
+					<p>당신은 당신만의 맞춤값들로 변수들을 수정하거나, 그냥 기본값들로 사용할 수 있습니다. 여기 사이간격이 있는
+						두 컬럼 레이아웃을 만드는 기본 설정의 사용예가 있습니다.</p>
+					<div class="bs-old-docs">
+						<p>
+							.wrapper {<br> .make-row();<br> }<br>
+							.content-main {<br> .make-lg-column(8);<br> }<br>
+							.content-secondary {<br> .make-lg-column(3);<br>
+							.make-lg-column-offset(1);<br> }
+						</p>
+					</div>
+					<div class="bs-old-docs">
+						<p>
+							&lt;div class="wrapper"&gt;<br> &emsp;&lt;div
+							class="content-main"&gt;...&lt;/div&gt;<br> &emsp;&lt;div
+							class="content-secondary"&gt;...&lt;/div&gt;<br>
+							&lt;/div&gt;
+						</p>
+					</div>
+				</div>
+
+				<!-- =========================================
+				==============================================
+				============================================-->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="side_menu3">타이포그래피</h1>
+					</div>
+
+					<!-- Headings -->
+					<h2 id="menu3_sub1">제목</h2>
+					<p>
+						<code>&lt;h1&gt;</code>
+						부터
+						<code>&lt;h6&gt;</code>
+						까지 모든 제목 마크업이 가능합니다.
+					</p>
+					<div class="bs-example bs-example-type">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td><h1>h1. Bootstrap heading</h1></td>
+									<td class="info">Semibold 36px</td>
+								</tr>
+								<tr>
+									<td><h2>h2. Bootstrap heading</h2></td>
+									<td class="info">Semibold 30px</td>
+								</tr>
+								<tr>
+									<td><h3>h3. Bootstrap heading</h3></td>
+									<td class="info">Semibold 24px</td>
+								</tr>
+								<tr>
+									<td><h4>h4. Bootstrap heading</h4></td>
+									<td class="info">Semibold 18px</td>
+								</tr>
+								<tr>
+									<td><h5>h5. Bootstrap heading</h5></td>
+									<td class="info">Semibold 14px</td>
+								</tr>
+								<tr>
+									<td><h6>h6. Bootstrap heading</h6></td>
+									<td class="info">Semibold 12px</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<p>
+						또한 제목에는
+						<code>&lt;small&gt;</code>
+						요소를 넣을 수 있습니다. 제목에 작고, 연한색의 부가문구를 넣기 위해 사용하세요.
+					</p>
+					<div class="bs-example bs-example-type">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td><h1>
+											h1. Bootstrap heading <small>Secondary text</small>
+										</h1></td>
+								</tr>
+								<tr>
+									<td><h2>
+											h2. Bootstrap heading <small>Secondary text</small>
+										</h2></td>
+								</tr>
+								<tr>
+									<td><h3>
+											h3. Bootstrap heading <small>Secondary text</small>
+										</h3></td>
+								</tr>
+								<tr>
+									<td><h4>
+											h4. Bootstrap heading <small>Secondary text</small>
+										</h4></td>
+								</tr>
+								<tr>
+									<td><h5>
+											h5. Bootstrap heading <small>Secondary text</small>
+										</h5></td>
+								</tr>
+								<tr>
+									<td><h6>
+											h6. Bootstrap heading <small>Secondary text</small>
+										</h6></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
 
+					<!-- Body copy -->
+					<h2 id="menu3_sub2">본문</h2>
+					<p>
+						부트스트랩의
+						<code>font-size</code>
+						기본값은 <strong>14px</strong> 이고,
+						<code>line-height</code>
+						는 <strong>1.428</strong> 입니다. 이것은
+						<code>&lt;body&gt;</code>
+						와 모든 단락에 적용됩니다. 추가로,
+						<code>&lt;p&gt;</code>
+						(단락) 은 행높이의 절반의 하단 마진을 가집니다.(기본값에 의하면 10px 로 계산됩니다).
+					</p>
+					<div class="bs-example">
+						<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum
+							sociis natoque penatibus et magnis dis parturient montes,
+							nascetur ridiculus mus. Nullam id dolor id nibh ultricies
+							vehicula.</p>
+						<p>Cum sociis natoque penatibus et magnis dis parturient
+							montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus
+							auctor fringilla. Duis mollis, est non commodo luctus, nisi erat
+							porttitor ligula, eget lacinia odio sem nec elit. Donec
+							ullamcorper nulla non metus auctor fringilla.</p>
+						<p>Maecenas sed diam eget risus varius blandit sit amet non
+							magna. Donec id elit non mi porta gravida at eget metus. Duis
+							mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+							lacinia odio sem nec elit.</p>
+					</div>
+					<!-- Body copy .lead -->
+					<h3>리드 문단</h3>
+					<p>
+						<code>.lead</code>
+						을 추가하여 문장을 눈에 띄도록 만드세요.
+					</p>
+					<div class="bs-example">
+						<p class="lead">Vivamus sagittis lacus vel augue laoreet
+							rutrum faucibus dolor auctor. Duis mollis, est non commodo
+							luctus.</p>
+					</div>
+
+					<!-- Using LESS -->
+					<h3>Less 변수</h3>
+					<p>
+						문자크기는 <strong>variables.less</strong> 에서의 두 LESS 변수(
+						<code>@font-size-base</code>
+						와
+						<code>@line-height-base</code>
+						) 에 기반됩니다. 첫번째 변수는 기본 폰트 크기이고 두번째 변수는 기본 행 높이입니다. 타이포그래피에서 마진, 패딩,
+						행 높이를 구하기 위해 두 변수와 몇 개의 간단한 수학을 사용합니다.
+					</p>
+
+
+					<!-- Emphasis -->
+					<h2 id="menu3_sub3">강조</h2>
+					<p>가벼운 스타일과 함께 HTML 의 기본 강조 태그들을 활용하세요.</p>
+
+					<h3>작은 텍스트</h3>
+					<p>
+						인라인이나 블록에서 텍스트를 덜 강조하기 위해,
+						<code>&lt;small&gt;</code>
+						태그를 사용하면 85% 크기로 보여집니다. 제목 요소는 내포된
+						<code>&lt;small&gt;</code>
+						요소를 위한 그들만의
+						<code>font-size</code>
+						를 가지고 있습니다.
+					</p>
+					<div class="bs-example">
+						<p>
+							<small>This line of text is meant to be treated as fine
+								print.</small>
+						</p>
+					</div>
+
+
+					<h3>굵게</h3>
+					<p>폰트를 굵게 하여 텍스트를 강조합니다.</p>
+					<div class="bs-example">
+						<p>
+							The following snippet of text is <strong>rendered as
+								bold text</strong>.
+						</p>
+					</div>
+
+					<h3>이탤릭체</h3>
+					<p>이탤릭체로 텍스트를 강조합니다.</p>
+					<div class="bs-example">
+						<p>
+							The following snippet of text is <em>rendered as italicized
+								text</em>.
+						</p>
+					</div>
+
+					<div class="bs-callout bs-callout-info">
+						<h4>선택가능한 요소들</h4>
+						<p>
+							HTML5 에서
+							<code>&lt;b&gt;</code>
+							와
+							<code>&lt;i&gt;</code>
+							는 마음대로 사용해도 됩니다.
+							<code>&lt;b&gt;</code>
+							는 단어나 구를 강조하기 위해 쓰이나,
+							<code>&lt;i&gt;</code>
+							는 거의 음성이나 기술적인 부분 등에 쓰입니다.
+						</p>
+					</div>
+
+					<h3>정렬 클래스</h3>
+					<p>정렬 클래스로 쉽게 정렬하세요.</p>
+					<div class="bs-example">
+						<p class="text-left">Left aligned text.</p>
+						<p class="text-center">Center aligned text.</p>
+						<p class="text-right">Right aligned text.</p>
+					</div>
+					<h3>강조 클래스</h3>
+					<p>소수의 강조 유틸리티 클래스로 색을 통해 의미를 전달하세요.</p>
+					<div class="bs-example">
+						<p class="text-muted">Fusce dapibus, tellus ac cursus commodo,
+							tortor mauris nibh.</p>
+						<p class="text-primary">Nullam id dolor id nibh ultricies
+							vehicula ut id elit.</p>
+						<p class="text-success">Duis mollis, est non commodo luctus,
+							nisi erat porttitor ligula.</p>
+						<p class="text-info">Maecenas sed diam eget risus varius
+							blandit sit amet non magna.</p>
+						<p class="text-warning">Etiam porta sem malesuada magna mollis
+							euismod.</p>
+						<p class="text-danger">Donec ullamcorper nulla non metus
+							auctor fringilla.</p>
+					</div>
+
+
+					<!-- Abbreviations -->
+					<h2 id="menu3_sub4">약어</h2>
+					<p>
+						<code>&lt;abbr&gt;</code>
+						는 약어나 두문자어를 마우스를 올렸을 때 원래 텍스트를 보여주기 위한 요소입니다.
+						<code>title</code>
+						속성이 있는 약어는 점으로된 밑줄을 가지고 있고 마우스를 올렸을때 물음표 커서가 보여지며, 원래 텍스트를 보여줍니다.
+					</p>
+
+					<h3>기본 약어</h3>
+					<p>
+						<code>&lt;abbr&gt;</code>
+						요소로 감싸고
+						<code>title</code>
+						속성을 추가하세요.
+					</p>
+					<div class="bs-example">
+						<p>
+							An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.
+						</p>
+					</div>
+
+					<h3>두문자어</h3>
+					<p>
+						미세하게 작은(90%) 폰트크기를 가지려면
+						<code>.initialism</code>
+						을 추가하세요.
+					</p>
+					<div class="bs-example">
+						<p>
+							<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+							is the best thing since sliced bread.
+						</p>
+					</div>
+
+
+					<!-- Addresses -->
+					<h2 id="menu3_sub5">주소</h2>
+					<p>
+						주소나 이메일 등의 연락처를 보여줍니다.
+						<code>&lt;br&gt;</code>
+						로 개행합니다.
+					</p>
+					<div class="bs-example">
+						<address>
+							<strong>Twitter, Inc.</strong><br> 795 Folsom Ave, Suite 600<br>
+							San Francisco, CA 94107<br> <abbr title="Phone">P:</abbr>
+							(123) 456-7890
+						</address>
+						<address>
+							<strong>Full Name</strong><br> <a href="mailto:#">first.last@example.com</a>
+						</address>
+					</div>
+
+
+					<!-- Blockquotes -->
+					<h2 id="menu3_sub6">인용구</h2>
+					<p>당신의 문서내 다른 출처로부터 인용한 콘텐츠 블록을 위해 사용합니다.</p>
+
+					<h3>기본 인용구</h3>
+					<p>
+						인용한 <abbr title="HyperText Markup Language">HTML</abbr> 을
+						<code>&lt;blockquote&gt;</code>
+						으로 감싸세요. 직접 인용구를 위해, 우리는
+						<code>&lt;p&gt;</code>
+						를 추천합니다.
+					</p>
+					<div class="bs-example">
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Integer posuere erat a ante.</p>
+						</blockquote>
+					</div>
+
+					<h3>인용구 옵션</h3>
+					<p>
+						간단한 변형을 위해 기본
+						<code>&lt;blockquote&gt;</code>
+						를 기반으로 모양과 내용을 바꿉니다.
+					</p>
+
+					<h4>출처 표기</h4>
+					<p>
+						출처를 알수 있게
+						<code>&lt;small&gt;</code>
+						태그를 추가하세요. 출처 원천의 이름은
+						<code>&lt;cite&gt;</code>
+						로 감싸주세요.
+					</p>
+					<div class="bs-example">
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Integer posuere erat a ante.</p>
+							<small>Someone famous in <cite title="Source Title">Source
+									Title</cite></small>
+						</blockquote>
+					</div>
+
+					<h4>표시 옵션</h4>
+					<p>
+						인용구를 오른쪽 정렬하려면
+						<code>.pull-right</code>
+						를 추가하세요.
+					</p>
+					<div class="bs-example" style="overflow: hidden;">
+						<blockquote class="pull-right">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Integer posuere erat a ante.</p>
+							<small>Someone famous in <cite title="Source Title">Source
+									Title</cite></small>
+						</blockquote>
+					</div>
+
+
+					<!-- Lists -->
+					<h2 id="menu3_sub7">목록</h2>
+
+					<h3>순서없는</h3>
+					<p>
+						순서가 <em>명확치 않은</em> 항목들의 목록입니다.
+					</p>
+					<div class="bs-example">
+						<ul>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetur adipiscing elit</li>
+							<li>Integer molestie lorem at massa</li>
+							<li>Facilisis in pretium nisl aliquet</li>
+							<li>Nulla volutpat aliquam velit
+								<ul>
+									<li>Phasellus iaculis neque</li>
+									<li>Purus sodales ultricies</li>
+									<li>Vestibulum laoreet porttitor sem</li>
+									<li>Ac tristique libero volutpat at</li>
+								</ul>
+							</li>
+							<li>Faucibus porta lacus fringilla vel</li>
+							<li>Aenean sit amet erat nunc</li>
+							<li>Eget porttitor lorem</li>
+						</ul>
+					</div>
+
+					<h3>순서있는</h3>
+					<p>
+						순서가 <em>명확한</em> 항목들의 목록입니다.
+					</p>
+					<div class="bs-example">
+						<ol>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetur adipiscing elit</li>
+							<li>Integer molestie lorem at massa</li>
+							<li>Facilisis in pretium nisl aliquet</li>
+							<li>Nulla volutpat aliquam velit</li>
+							<li>Faucibus porta lacus fringilla vel</li>
+							<li>Aenean sit amet erat nunc</li>
+							<li>Eget porttitor lorem</li>
+						</ol>
+					</div>
+
+					<h3>스타일 없는</h3>
+					<p>
+						항목에서
+						<code>list-style</code>
+						과 좌측 마진을 제거하세요. <strong>이것은 오직 바로 아래 항목들에게만 적용됩니다</strong>. 그래서
+						당신은 중첩된 목록에도 따로 클래스를 추가하여야 합니다.
+					</p>
+					<div class="bs-example">
+						<ul class="list-unstyled">
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetur adipiscing elit</li>
+							<li>Integer molestie lorem at massa</li>
+							<li>Facilisis in pretium nisl aliquet</li>
+							<li>Nulla volutpat aliquam velit
+								<ul>
+									<li>Phasellus iaculis neque</li>
+									<li>Purus sodales ultricies</li>
+									<li>Vestibulum laoreet porttitor sem</li>
+									<li>Ac tristique libero volutpat at</li>
+								</ul>
+							</li>
+							<li>Faucibus porta lacus fringilla vel</li>
+							<li>Aenean sit amet erat nunc</li>
+							<li>Eget porttitor lorem</li>
+						</ul>
+					</div>
+
+					<h3>인라인</h3>
+					<p>
+						<code>display: inline-block;</code>
+						로 항목들을 한줄에 보여주고 약간의 패딩을 줍니다.
+					</p>
+					<div class="bs-example">
+						<ul class="list-inline">
+							<li>Lorem ipsum</li>
+							<li>Phasellus iaculis</li>
+							<li>Nulla volutpat</li>
+						</ul>
+					</div>
+
+					<h3>설명</h3>
+					<p>연관된 설명들의 목록입니다.</p>
+					<div class="bs-example">
+						<dl>
+							<dt>Description lists</dt>
+							<dd>A description list is perfect for defining terms.</dd>
+							<dt>Euismod</dt>
+							<dd>Vestibulum id ligula porta felis euismod semper eget
+								lacinia odio sem nec elit.</dd>
+							<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+							<dt>Malesuada porta</dt>
+							<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+						</dl>
+					</div>
+
+					<h4>수평 설명</h4>
+					<p>
+						<code>&lt;dl&gt;</code>
+						내 용어들과 설명들을 나란히 놓습니다. 기본적으로 쌓이는 것부터 시작이지만, 네비게이션 바가 펼쳐지는 때와 같은
+						타이밍에 다음과 같이 됩니다.
+					</p>
+					<div class="bs-example">
+						<dl class="dl-horizontal">
+							<dt>Description lists</dt>
+							<dd>A description list is perfect for defining terms.</dd>
+							<dt>Euismod</dt>
+							<dd>Vestibulum id ligula porta felis euismod semper eget
+								lacinia odio sem nec elit.</dd>
+							<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+							<dt>Malesuada porta</dt>
+							<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+							<dt>Felis euismod semper eget lacinia</dt>
+							<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris
+								condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+						</dl>
+					</div>
+
+					<div class="bs-callout bs-callout-info">
+						<h4>자동 줄임</h4>
+						<p>
+							수평 설명 목록은 열 길이보다 너무 긴 용어를
+							<code>text-overflow</code>
+							로 줄일 것입니다. 좁은 너비에서는 개행되는 모양으로 바뀔 것입니다.
+						</p>
+					</div>
+				</div>
+
+
+				<!-- =========================================
+				==============================================
+				============================================-->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="side_menu4">코드</h1>
+					</div>
+
+					<h2>인라인</h2>
+					<p>
+						<code>&lt;code&gt;</code>
+						로 짧은 코드를 감싸세요.
+					</p>
+					<div class="bs-example">
+						For example,
+						<code>&lt;section&gt;</code>
+						should be wrapped as inline.
+					</div>
+
+					<h2>기본 블록</h2>
+					<p>
+						여러행의 코드를 위해
+						<code>&lt;pre&gt;</code>
+						를 사용하세요. 적절한 렌더링을 위해 어떤 꺽쇠 괄호는 부호화를 해야합니다.
+					</p>
+					<div class="bs-example">
+						<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+					</div>
+
+					<p>
+						당신은 선택적으로
+						<code>.pre-scrollable</code>
+						를 추가할 수도 있습니다. 그건 최대 높이를 350px 로 설정하고 y축 스크롤바를 제공합니다.
+					</p>
+				</div>
+
+
+
+				<!-- =========================================
+				==============================================
+				============================================-->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="side_menu5">테이블</h1>
+					</div>
+
+					<h2 id="menu5_sub1">기본 예제</h2>
+					<p>
+						<code>&lt;table&gt;</code>
+						에 약간의 패딩과 수평 구분선이 있는 기본 스타일의
+						<code>.table</code>
+						클래스를 추가하세요. 그건 매우 불필요해 보이지만, 캘린더와 날짜선택기 같은 플러그인들을 위해 테이블이 널리 사용되는
+						것을 감안하여, 우리는 맞춤 테이블 스타일들을 분리하기로 했습니다.
+					</p>
+					<div class="bs-example">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<h2 id="menu5_sub2">줄무늬 행</h2>
+					<p>
+						<code>&lt;tbody&gt;</code>
+						안에 테이블 행에 얼룩말같은 줄무늬를 추가하려면,
+						<code>.table-striped</code>
+						를 사용하세요.
+					</p>
+					<div class="bs-callout bs-callout-danger">
+						<h4>크로스브라우저 호환성</h4>
+						<p>
+							줄무늬 행 테이블은
+							<code>:nth-child</code>
+							CSS 셀렉터로 꾸며지기 때문에, 인터넷 익스플로러 8 에서는 가능하지 않습니다.
+						</p>
+					</div>
+					<div class="bs-example">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<h2 id="menu5_sub3">선있는 테이블</h2>
+					<p>
+						테이블의 모서리와 셀에 선을 그리기 위해
+						<code>.table-bordered</code>
+						을 추가하세요.
+					</p>
+					<div class="bs-example">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@TwBootstrap</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td colspan="2">Larry the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<h2 id="menu5_sub4">행 hover</h2>
+					<p>
+						<code>&lt;tbody&gt;</code>
+						안의 테이블 행에 hover 상태를 확인할 수 있게끔 하려면
+						<code>.table-hover</code>
+						를 추가하세요.
+					</p>
+					<div class="bs-example">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td colspan="2">Larry the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<h2 id="menu5_sub5">좁은폭 테이블</h2>
+					<p>
+						셀 패딩을 반으로 줄여 테이블을 좀 더 조밀하게 만드려면
+						<code>.table-condensed</code>
+						을 추가하세요.
+					</p>
+					<div class="bs-example">
+						<table class="table table-condensed">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td colspan="2">Larry the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<h2 id="menu5_sub6">맥락적인 클래스들</h2>
+					<p>테이블 행이나 셀에 색을 넣으려면 맥락적인 클래스들을 사용하세요.</p>
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped">
+							<colgroup>
+								<col class="col-lg-1">
+								<col class="col-lg-7">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>클래스</th>
+									<th>설명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><code>.active</code></td>
+									<td>특정한 행이나 셀에 hover 했을 때와 같은 색을 입힙니다.</td>
+								</tr>
+								<tr>
+									<td><code>.success</code></td>
+									<td>성공적이거나 긍정적인 액션을 의미합니다.</td>
+								</tr>
+								<tr>
+									<td><code>.warning</code></td>
+									<td>주의가 필요한 경고를 의미합니다.</td>
+								</tr>
+								<tr>
+									<td><code>.danger</code></td>
+									<td>위험하거나 부정적일수 있는 액션을 의미합니다.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="bs-example">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Column heading</th>
+									<th>Column heading</th>
+									<th>Column heading</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="active">
+									<td>1</td>
+									<td>Column content</td>
+									<td>Column content</td>
+									<td>Column content</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Column content</td>
+									<td>Column content</td>
+									<td>Column content</td>
+								</tr>
+								<tr class="success">
+									<td>3</td>
+									<td>Column content</td>
+									<td>Column content</td>
+									<td>Column content</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Column content</td>
+									<td>Column content</td>
+									<td>Column content</td>
+								</tr>
+								<tr class="warning">
+									<td>5</td>
+									<td>Column content</td>
+									<td>Column content</td>
+									<td>Column content</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Column content</td>
+									<td>Column content</td>
+									<td>Column content</td>
+								</tr>
+								<tr class="danger">
+									<td>7</td>
+									<td>Column content</td>
+									<td>Column content</td>
+									<td>Column content</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<h2 id="menu5_sub7">반응형 테이블</h2>
+					<p>
+						<code>.table</code>
+						을
+						<code>.table-responsive</code>
+						으로 감싸서 작은 기기에서는 수평 스크롤을 할 수 있는 반응형 테이블을 만듭니다(768px 이하). 768px 보다 큰
+						기기에서는 보기에 차이가 없습니다.
+					</p>
+					<div class="bs-example">
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- /.table-responsive -->
+
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+										<th>Table heading</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+										<td>Table cell</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div>
+
+
+
+				<!-- =========================================
+				==============================================
+				============================================-->
+				<div class="bs-docs-section">
+					<div class="page-header">
+						<h1 id="side_menu6">폼</h1>
+					</div>
+
+					<h2 id="menu6_sub1">기본 예제</h2>
+					<p>
+						각각의 폼콘트롤은 자동으로 약간의 전역 스타일링을 받아들입니다.
+						<code>.form-control</code>
+						이 있는 모든 텍스트 기반의
+						<code>&lt;input&gt;</code>
+						,
+						<code>&lt;textarea&gt;</code>
+						그리고
+						<code>&lt;select&gt;</code>
+						요소는 기본적으로
+						<code>width: 100%;</code>
+						이다. 최적의 여백을 위해
+						<code>.form-group</code>
+						으로 라벨과 콘트롤을 감싸세요.
+					</p>
+					<div class="bs-example">
+						<form role="form">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email address</label> <input
+									type="email" class="form-control" id="exampleInputEmail1"
+									placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label> <input
+									type="password" class="form-control" id="exampleInputPassword1"
+									placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputFile">File input</label> <input
+									type="file" id="exampleInputFile">
+								<p class="help-block">Example block-level help text here.</p>
+							</div>
+							<div class="checkbox">
+								<label> <input type="checkbox"> Check me out
+								</label>
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</div>
+
+
+					<h2 id="menu6_sub2">인라인 폼</h2>
+					<p>
+						조밀한 레이아웃을 위한 좌측 정렬된 inline-block 콘트롤을 위해
+						<code>.form-inline</code>
+						를 추가하세요.
+					</p>
+					<div class="bs-callout bs-callout-danger">
+						<h4>맞춤 너비가 필요합니다.</h4>
+						<p>
+							부트스트랩에서
+							<code>input</code>
+							,
+							<code>select</code>
+							,
+							<code>textarea</code>
+							는 기본적으로 100% 너비입니다. 인라인 폼에서 사용하려면, 폼콘트롤에 너비를 설정해주어야 합니다.
+						</p>
+					</div>
+					<div class="bs-callout bs-callout-danger">
+						<h4>항상 라벨을 추가하세요.</h4>
+						<p>
+							모든 input 을 위한 라벨이 없다면 스크린 리더는 문제가 생길 것입니다. 인라인 폼에서 당신은
+							<code>.sr-only</code>
+							클래스를 사용하여 라벨을 숨길 수 있습니다.
+						</p>
+					</div>
+					<div class="bs-example">
+						<form class="form-inline" role="form">
+							<div class="form-group">
+								<label class="sr-only" for="exampleInputEmail2">Email
+									address</label> <input type="email" class="form-control"
+									id="exampleInputEmail2" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="exampleInputPassword2">Password</label>
+								<input type="password" class="form-control"
+									id="exampleInputPassword2" placeholder="Password">
+							</div>
+							<div class="checkbox">
+								<label> <input type="checkbox"> Remember me
+								</label>
+							</div>
+							<button type="submit" class="btn btn-default">Sign in</button>
+						</form>
+					</div>
+
+
+					<h2 id="menu6_sub3">수평 폼</h2>
+					<p>
+						폼에
+						<code>.form-horizontal</code>
+						를 추가하여 수평 레이아웃을 만드세요. 이 안에서는 부트스트랩의 그리드 클래스를 사용하여 라벨과 폼콘트롤 그룹을
+						정렬합니다. 그리드행 역할은
+						<code>.form-group</code>
+						가 하기 때문에
+						<code>.row</code>
+						는 필요가 없습니다.
+					</p>
+					<div class="bs-example">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+								<div class="col-lg-10">
+									<input type="email" class="form-control" id="inputEmail1"
+										placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword1" class="col-lg-2 control-label">Password</label>
+								<div class="col-lg-10">
+									<input type="password" class="form-control" id="inputPassword1"
+										placeholder="Password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-offset-2 col-lg-10">
+									<div class="checkbox">
+										<label> <input type="checkbox"> Remember me
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-offset-2 col-lg-10">
+									<button type="submit" class="btn btn-default">Sign in</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+
+					<h2 id="menu6_sub4">지원하는 컨트롤</h2>
+					<p>예제 폼에서 지원되는 표준 폼콘트롤의 예제들.</p>
+
+					<h3>Input</h3>
+					<p>
+						가장 흔한 폼 콘트롤인 텍스트 기반 입력 필드입니다. HTML5 의 모든 타입을 지원합니다:
+						<code>text</code>
+						,
+						<code>password</code>
+						,
+						<code>datetime</code>
+						,
+						<code>datetime-local</code>
+						,
+						<code>date</code>
+						,
+						<code>month</code>
+						,
+						<code>time</code>
+						,
+						<code>week</code>
+						,
+						<code>number</code>
+						,
+						<code>email</code>
+						,
+						<code>url</code>
+						,
+						<code>search</code>
+						,
+						<code>tel</code>
+						,
+						<code>color</code>
+						.
+					</p>
+					<div class="bs-callout bs-callout-danger">
+						<h4>타입 선언이 필요합니다.</h4>
+						<p>
+							Input 은
+							<code>type</code>
+							이 제대로 선언되었을 때 완전한 스타일이 적용될 것입니다..
+						</p>
+					</div>
+					<div class="bs-example">
+						<form role="form">
+							<input type="text" class="form-control" placeholder="Text input">
+						</form>
+					</div>
+
+					<h3>Textarea</h3>
+					<p>
+						여러 줄의 텍스트를 지원하는 폼콘트롤. 필요에 따라
+						<code>rows</code>
+						속성을 바꾸세요.
+					</p>
+					<div class="bs-example">
+						<form role="form">
+							<textarea class="form-control" rows="3"></textarea>
+						</form>
+					</div>
+
+					<h3>체크박스와 라디오</h3>
+					<p>체크박스는 목록에서 하나 혹은 몇개의 옵션을 선택하기 위함이고, 라디오는 여러개중 하나의 옵션을 선택하기
+						위함입니다.</p>
+					<h4>기본 (쌓이는)</h4>
+					<div class="bs-example">
+						<form role="form">
+							<div class="checkbox">
+								<label> <input type="checkbox" value=""> Option
+									one is this and that&mdash;be sure to include why it's great
+								</label>
+							</div>
+							<br>
+							<div class="radio">
+								<label> <input type="radio" name="optionsRadios"
+									id="optionsRadios1" value="option1" checked> Option one
+									is this and that&mdash;be sure to include why it's great
+								</label>
+							</div>
+							<div class="radio">
+								<label> <input type="radio" name="optionsRadios"
+									id="optionsRadios2" value="option2"> Option two can be
+									something else and selecting it will deselect option one
+								</label>
+							</div>
+						</form>
+					</div>
+					<!-- /.bs-example -->
+
+					<h4>인라인 체크박스</h4>
+					<p>
+						일련의 체크박스나 라디오를 같은 줄에 보이게 하려면
+						<code>.checkbox-inline</code>
+						나
+						<code>.radio-inline</code>
+						클래스를 사용하세요.
+					</p>
+					<div class="bs-example">
+						<form role="form">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="inlineCheckbox1" value="option1"> 1
+							</label> <label class="checkbox-inline"> <input type="checkbox"
+								id="inlineCheckbox2" value="option2"> 2
+							</label> <label class="checkbox-inline"> <input type="checkbox"
+								id="inlineCheckbox3" value="option3"> 3
+							</label>
+						</form>
+					</div>
+
+					<h3>셀렉트</h3>
+					<p>
+						기본 옵션을 사용하거나, 여러 옵션을 한번에 보여주기 위해
+						<code>multiple</code>
+						을 넣습니다.
+					</p>
+					<div class="bs-example">
+						<form role="form">
+							<select class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select> <br> <select multiple class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</form>
+					</div>
+
+
+					<h2 id="menu6_sub5">정적 콘트롤</h2>
+					<p>
+						수평 폼에서 텍스트를 넣고 싶을때는
+						<code>&lt;p&gt;</code>
+						에
+						<code>.form-control-static</code>
+						클래스를 사용하세요..
+					</p>
+					<div class="bs-example">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-2 control-label">Email</label>
+								<div class="col-lg-10">
+									<p class="form-control-static">email@example.com</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword" class="col-lg-2 control-label">Password</label>
+								<div class="col-lg-10">
+									<input type="password" class="form-control" id="inputPassword"
+										placeholder="Password">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<h2 id="menu6_sub6">폼콘트롤 상태</h2>
+					<p>기본 피드백 상태들로 사용자나 방문자에게 폼콘트롤과 라벨의 피드백을 제공합니다.</p>
+
+					<h3 id="forms-input-focus">입력 포커스</h3>
+					<p>
+						우리는
+						<code>:focus</code>
+						를 위해 몇몇 폼콘트롤들의 기본
+						<code>outline</code>
+						스타일들을 제거하고 그 대신에
+						<code>box-shadow</code>
+						를 적용했습니다.
+					</p>
+					<div class="bs-example">
+						<form role="form">
+							<input class="form-control" id="focusedInput" type="text"
+								value="This is focused...">
+						</form>
+					</div>
+
+					<h3 id="forms-disabled-inputs">입력 비활성화</h3>
+					<p>
+						사용자 입력을 막고 약간의 다른 모습을 적용하려면 input 에
+						<code>disabled</code>
+						속성을 추가하세요.
+					</p>
+					<div class="bs-example">
+						<form role="form">
+							<input class="form-control" id="disabledInput" type="text"
+								placeholder="Disabled input here…" disabled>
+						</form>
+					</div>
+
+
+					<h3 id="forms-disabled-fieldsets">필드셋 비활성화</h3>
+					<p>
+						<code>&lt;fieldset&gt;</code>
+						내에 모든 콘트롤을 한번에 비활성화하려면
+						<code>&lt;fieldset&gt;</code>
+						에
+						<code>disabled</code>
+						속성을 추가하세요.
+					</p>
+
+					<div class="bs-callout bs-callout-warning">
+						<h4>
+							<code>&lt;a&gt;</code>
+							링크 기능성은 영향을 받지 않습니다.
+						</h4>
+						<p>
+							이 클래스는
+							<code>&lt;a class="btn btn-default"&gt;</code>
+							버튼들의 기능성이 아닌 오직 모습만 변경합니다. 링크를 비활성화하려면 맞춤 자바스크립트를 사용하세요.
+						</p>
+					</div>
+
+					<div class="bs-callout bs-callout-danger">
+						<h4>크로스브라우저 호환성</h4>
+						<p>
+							부트스트랩은 이 스타일들을 모든 브라우저에 적용하지만, 인터넷 익스플로러 9 와 그 이하에서는 실제로
+							<code>&lt;fieldset&gt;</code>
+							에서
+							<code>disabled</code>
+							속성을 지원하지 않습니다. 이 브라우저들의 필드셋을 비활성화하려면 맞춤 자바스크립트를 사용하세요.
+						</p>
+					</div>
+
+					<div class="bs-example">
+						<form role="form">
+							<fieldset disabled>
+								<div class="form-group">
+									<label for="disabledTextInput">Disabled input</label> <input
+										type="text" id="disabledTextInput" class="form-control"
+										placeholder="Disabled input">
+								</div>
+								<div class="form-group">
+									<label for="disabledSelect">Disabled select menu</label> <select
+										id="disabledSelect" class="form-control">
+										<option>Disabled select</option>
+									</select>
+								</div>
+								<div class="checkbox">
+									<label> <input type="checkbox"> Can't check
+										this
+									</label>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</fieldset>
+						</form>
+					</div>
+
+					<h3 id="forms-validation">검사 상태들</h3>
+					<p>
+						부트스트랩은 폼콘트롤의 에러, 경고, 성공 상태를 위한 검사 스타일을 포함하고 있습니다. 사용하려면, 상위 요소에
+						<code>.has-warning</code>
+						,
+						<code>.has-error</code>
+						,
+						<code>.has-success</code>
+						를 추가하세요. 그 요소 내 모든
+						<code>.control-label</code>
+						,
+						<code>.form-control</code>
+						,
+						<code>.help-block</code>
+						은 검사 스타일을 이어받을 것입니다.
+					</p>
+
+					<div class="bs-example">
+						<form role="form">
+							<div class="form-group has-success">
+								<label class="control-label" for="inputSuccess">Input
+									with success</label> <input type="text" class="form-control"
+									id="inputSuccess">
+							</div>
+							<div class="form-group has-warning">
+								<label class="control-label" for="inputWarning">Input
+									with warning</label> <input type="text" class="form-control"
+									id="inputWarning">
+							</div>
+							<div class="form-group has-error">
+								<label class="control-label" for="inputError">Input with
+									error</label> <input type="text" class="form-control" id="inputError">
+							</div>
+						</form>
+					</div>
+
+
+					<h2 id="menu6_sub7">폼콘트롤 크기조절</h2>
+					<p>
+						<code>.input-lg</code>
+						같은 클래스를 이용하여 높이를 설정하세요, 그리고
+						<code>.col-lg-*</code>
+						같은 그리드 컬럼 클래스를 사용하여 너비를 설정하세요.
+					</p>
+
+					<h3>높이 조절</h3>
+					<p>버튼 크기에 어울리는 좀더 크거나 작은 폼콘트롤을 만드세요.</p>
+					<div class="bs-example bs-example-control-sizing">
+						<form role="form">
+							<div class="controls">
+								<input class="form-control input-lg" type="text"
+									placeholder=".input-lg"> <input type="text"
+									class="form-control" placeholder="Default input"> <input
+									class="form-control input-sm" type="text"
+									placeholder=".input-sm"> <select
+									class="form-control input-lg">
+									<option value="">.input-lg</option>
+								</select> <select class="form-control">
+									<option value="">Default select</option>
+								</select> <select class="form-control input-sm">
+									<option value="">.input-sm</option>
+								</select>
+							</div>
+						</form>
+					</div>
+
+					<h3>컬럼 크기조절</h3>
+					<p>쉽게 원하는 너비를 적용하려면, 그리드 컬럼이나 맞춤 상위 요소로 입력요소들을 감싸세요.</p>
+					<div class="bs-example">
+						<form role="form">
+							<div class="row">
+								<div class="col-lg-2">
+									<input type="text" class="form-control" placeholder=".col-lg-2">
+								</div>
+								<div class="col-lg-3">
+									<input type="text" class="form-control" placeholder=".col-lg-3">
+								</div>
+								<div class="col-lg-4">
+									<input type="text" class="form-control" placeholder=".col-lg-4">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<h2 id="menu6_sub8">도움말</h2>
+					<p>폼콘트롤을 위한 블록레벨의 도움말입니다.</p>
+					<div class="bs-example">
+						<form role="form">
+							<input type="text" class="form-control"> <span
+								class="help-block">A block of help text that breaks onto
+								a new line and may extend beyond one line.</span>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
